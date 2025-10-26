@@ -1,0 +1,44 @@
+{
+  "faqs": [
+    {
+      "question": "What is A One Tuition?",
+      "answer": "A One Tuition is a leading educational institute dedicated to helping students achieve academic excellence through personalized and result-oriented coaching."
+    },
+    {
+      "question": "What subjects do you offer?",
+      "answer": "We offer coaching for major subjects including Mathematics, Science, English, and Social Studies for students from Classes 1 to 12 (CBSE, ICSE, and State Boards)."
+    },
+    {
+      "question": "Do you provide online as well as offline classes?",
+      "answer": "Yes, we provide both online and offline tuition options so students can choose what suits them best."
+    },
+    {
+      "question": "Where is A One Tuition located?",
+      "answer": "We are located in [Your City Name]. You can also reach us directly on WhatsApp at +91 84484 75396 for directions or inquiries."
+    },
+    {
+      "question": "What makes A One Tuition different from others?",
+      "answer": "Our strength lies in experienced tutors, small batch sizes, individual attention, and a focus on conceptual clarity rather than rote learning."
+    },
+    {
+      "question": "What are your class timings?",
+      "answer": "Class timings are flexible and depend on the student’s grade and subject. We also offer custom schedules for working parents or students with extracurricular activities."
+    },
+    {
+      "question": "How can I enroll my child?",
+      "answer": "You can fill out the enquiry form on our website or click to chat on WhatsApp at +91 84484 75396 for instant assistance."
+    },
+    {
+      "question": "Do you offer demo classes?",
+      "answer": "Yes! We provide a free demo class so students can experience our teaching methods before enrolling."
+    },
+    {
+      "question": "How are the teachers selected?",
+      "answer": "All our tutors are qualified professionals with proven teaching experience and a strong track record of student success."
+    },
+    {
+      "question": "How do you track a student’s progress?",
+      "answer": "We conduct regular tests, progress reports, and feedback sessions with both students and parents to ensure consistent improvement."
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 // import { AppContext } from '../context/AppContext';
 import toast from 'react-hot-toast';
 import hero from '../assests/Hero_Section.png';
+import logo from '../assests/Aonetutions_logo.png';
 
 function Navbar() {
   // const navigate = useNavigate();
@@ -11,7 +12,7 @@ function Navbar() {
 
   return (
     <div className='flex items-center justify-between text-md py-4 border-b border-blue-900  '>
-      <img className='w-20 cursor-pointer' src={hero} />
+      <img className='w-20 cursor-pointer' style={{ width: '120px', height: '30px' }} src={logo} />
       {/* <ul className='hidden md:flex items-start gap-5 font-medium'>
         <NavLink to='/'>
           <li className='py-1'>HOME</li>

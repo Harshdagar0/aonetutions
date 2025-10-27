@@ -2,6 +2,7 @@ import React from 'react'
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
+import logo from '../assests/Aonetutions_logo.png';
 
 function Footer() {
   const message = 'Hi, I want to know more about the demo class';
@@ -17,7 +18,7 @@ function Footer() {
       <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14  mt-10 text-sm'>
         {/* left section  */}
         <div>
-          {/* <img className='w-32 mb-2' src={assets.logo1} alt=''/> */}
+          <img className='w-32 mb-2' src={logo} alt='' />
           <p className='w-full md:w-2/3 text-gray-800 leading-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
         {/* middel section  */}

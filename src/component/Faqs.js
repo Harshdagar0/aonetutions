@@ -17,7 +17,7 @@ export default function Faqs() {
   };
   return (
     <div>
-      <h3 className='text-blue-900 text-center text-xl mt-10 mb-3 md:text-5xl font-semibold'>FAQs</h3>
+      <h3 className='text-blue-900 text-center  mt-10 mb-3 text-3xl md:text-4xl font-semibold'>FAQs</h3>
       {faqsData.faqs.map((faq, index) => (
         <Accordion
           key={index}

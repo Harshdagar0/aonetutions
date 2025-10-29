@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import axios from 'axios';
 // src/index.js ya src/App.js me
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { toast } from "react-hot-toast";
 
 const testimonials = [
   {
@@ -58,10 +60,27 @@ const testimonials = [
   }
 `}</style>
 
+
+
 export default function Testimonials() {
   const sliderRef = useRef(null);
+  const [reviews, setReviews] = useState([]);
+  const fetchReviews = async () => {
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/reviews`);
+      if (res.data.success) {
+        setReviews(res.data.reviews);
+      } else {
+        toast.error("Failed to load reviews 😢");
+      }
+    } catch (error) {
+      // toast.error("Failed to load reviews 😢");
+      console.error(error);
+    }
+  };
 
   useEffect(() => {
+    fetchReviews();
     const handleResize = () => {
       sliderRef.current?.slickGoTo(0);
     };
@@ -114,13 +133,13 @@ export default function Testimonials() {
       </div>
 
       <Slider {...settings}>
-        {testimonials.map((item, index) => (
+        {reviews.map((item, index) => (
           <div
             key={index}
             className="px-2 flex"
           >
             <div className="bg-white text-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center text-center h-full w-full transition-transform hover:scale-105 duration-300">
-              <p className="text-gray-600 italic mb-4 flex-grow">“{item.feedback}”</p>
+              <p className="text-gray-600 italic mb-4 flex-grow">“{item.review}”</p>
               <h3 className="font-semibold text-lg text-blue-900">{item.name}</h3>
               {/* <p className="text-sm text-gray-500">{item.role}</p> */}
             </div>

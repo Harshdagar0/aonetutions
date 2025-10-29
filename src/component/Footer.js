@@ -6,8 +6,6 @@ import logo from '../assests/Aonetutions_logo.png';
 
 function Footer() {
   const message = 'Hi, I want to know more about the demo class';
-  console.log(process.env.REACT_APP_WHATSAPP_NUMBER)
-
   const handleClick = () => {
     const whatsappUrl = `https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

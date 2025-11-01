@@ -102,27 +102,11 @@ export default function Testimonials() {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    // responsive: [
-    //   {
-    //     breakpoint: 1440,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
   };
 
 
   return (
-    <section className="bg-blue-900 rounded-2xl mt-10 text-white md:py-16 py-5 pb-10 px-6 md:px-12 lg:px-20 w-full max-w-screen-xl mx-auto">
+    <section className="bg-blue-900 rounded-2xl mt-10 text-white md:py-16 py-5 pb-10 px-6 md:px-12 lg:px-20 w-full max-w-screen-xl mx-auto" id="testimonials">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-3">
           What Our Students & Parents Say

@@ -17,23 +17,22 @@ function Footer() {
         {/* left section  */}
         <div>
           <img className='w-32 mb-2' src={logo} alt='' />
-          <p className='w-full md:w-2/3 text-gray-800 leading-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p className='w-full md:w-2/3 text-gray-800 leading-6'>A One Tuitions is committed to providing quality education for students from Classes 8th to 12th. We help students connect with expert teachers for personalized and result-oriented learning. Our platform also supports teachers in finding the right students and growing their teaching network. Join A One Tuitions — where learning and teaching come together for success.</p>
         </div>
         {/* middel section  */}
         <div>
           <p className='text-xl font-medium mb-5'>Company</p>
           <ul className='flex flex-col gap-2 text-gray-800'>
-            <li>Home</li>
-            <li>About us </li>
-            <li>Contact us </li>
-            <li>Privacy policy</li>
+            <li><a href='#BookDemo'>Book Demo Class</a></li>
+            <li><a href='#hww'> How we work</a></li>
+            <li><a href='#testimonials'>  What Our Students Say</a></li>
           </ul>
         </div>
         {/* right section  */}
         <div>
           <p className='text-xl  font-medium mb-5'>GET IN TOUCH</p>
           <ul className='flex flex-col gap-2 text-gray-800'>
-            <li>+0-000-000-000</li>
+            <li>+91 8448475396</li>
             <li>random@gmail.com</li>
             <li className='flex gap-3'>
               <a href='https://www.facebook.com/' target='_blank' ><BiLogoFacebookCircle className='text-2xl cursor-pointer' /></a>

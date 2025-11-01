@@ -24,7 +24,7 @@ export default function Howwework() {
   ];
 
   return (
-    <div className='flex flex-col items-center gap-4 my-16 text-gray-900 md:mx-10 '>
+    <div className='flex flex-col items-center gap-4 my-16 text-gray-900 md:mx-10 ' id="hww">
       <h1 className='text-3xl md:text-4xl text-blue-900 font-medium'>How We Work?</h1>
       <div className='w-ful grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 pt-5 gap-y-6 px-3 sm:px-0'>
         {content && content.map((item, index) => (

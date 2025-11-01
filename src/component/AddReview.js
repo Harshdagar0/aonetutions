@@ -19,6 +19,7 @@ export default function AddReview() {
 
     try {
       const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/reviews`, { name, review });
+      console.log(res)
 
       if (res.data.success) {
         toast.success("Review added successfully! 🎉");
